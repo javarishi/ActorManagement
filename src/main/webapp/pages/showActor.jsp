@@ -7,6 +7,6 @@
 <title>Show Actor</title>
 </head>
 <body>
-	Saved this Actor:: 	${actor}
+	${actor}
 </body>
 </html>
