@@ -1,0 +1,10 @@
+2020-05-05 10:38:50.768  INFO 10348 --- [main] c.h.learn.ActorManagementApplication     : Starting ActorManagementApplication on DESKTOP-V96Q6IH with PID 10348 (C:\RISHI\GIT\ActorManagement\target\classes started by Rishi in C:\RISHI\GIT\ActorManagement)
+2020-05-05 10:38:50.772 DEBUG 10348 --- [main] c.h.learn.ActorManagementApplication     : Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-05-05 10:38:50.772  INFO 10348 --- [main] c.h.learn.ActorManagementApplication     : No active profile set, falling back to default profiles: default
+2020-05-05 10:38:54.894  WARN 10348 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-05 10:38:55.525  INFO 10348 --- [main] c.h.learn.ActorManagementApplication     : Started ActorManagementApplication in 5.238 seconds (JVM running for 6.44)
+2020-05-05 10:39:08.188 TRACE 10348 --- [http-nio-8080-exec-1] c.h.l.controller.ActorRestController     : trace : Hello World!
+2020-05-05 10:39:08.190 DEBUG 10348 --- [http-nio-8080-exec-1] c.h.l.controller.ActorRestController     : debug : Accessing getActors
+2020-05-05 10:39:08.190  INFO 10348 --- [http-nio-8080-exec-1] c.h.l.controller.ActorRestController     : info: I am fine.
+2020-05-05 10:39:08.191  WARN 10348 --- [http-nio-8080-exec-1] c.h.l.controller.ActorRestController     : warn: I love programming.
+2020-05-05 10:39:08.191 ERROR 10348 --- [http-nio-8080-exec-1] c.h.l.controller.ActorRestController     : error: I am programming.

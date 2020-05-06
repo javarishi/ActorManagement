@@ -4,6 +4,8 @@ import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -20,14 +22,23 @@ import org.springframework.web.servlet.ModelAndView;
 import com.h2kinfosys.learn.dao.ActorDAO;
 import com.h2kinfosys.learn.dto.Actor;
 
+
+
 @RestController
 public class ActorRestController {
 
+	static final Logger LOG = LoggerFactory.getLogger(ActorRestController.class);
+	
 	@Autowired
 	ActorDAO actorDao;
 	
 	@GetMapping(path="actors")
 	public List<Actor> getActors() {
+		LOG.trace("trace : Hello World!");
+		LOG.debug("debug : Accessing getActors");
+		LOG.info("info: I am fine.");
+		LOG.warn("warn: I love programming.");
+		LOG.error("error: I am programming.");
 		List<Actor> actors = actorDao.findAll();
 		return actors;
 	}
